@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <title>Data Research Center  - Trans | 7</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- BEGIN FAVICON -->
+     <link rel="shortcut icon" href="assets/img/favicon.ico">
+     <!-- END FAVICON -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-awesome/css/line-awesome.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="assets/fonts/open-sans/styles.css">-->
+
+    <link rel="stylesheet" type="text/css" href="assets/fonts/montserrat/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="libs/tether/css/tether.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/jscrollpane/jquery.jscrollpane.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/common.css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN THEME STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/themes/international-klein-blue.css">
+    <link class="ks-sidebar-dark-style" rel="stylesheet" type="text/css" href="assets/styles/themes/sidebar-black.min.css">
+    <!-- END THEME STYLES -->
+
+    <!-- DASHBOARD STYLES-->
+    <link rel="stylesheet" type="text/css" href="libs/stacktable/stacktable.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/kosmo/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/weather/css/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/c3js/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/widgets/payment.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/widgets/panels.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/dashboard/tabbed-sidebar.min.css">
+    <!-- END DASHBOARD STYLES-->
+
+    <!-- FLICKITY-->
+    <link rel="stylesheet" type="text/css" href="libs/flickity/flickity.min.css">
+    <!-- END FLICKITY-->
+</head>
+<!-- END HEAD -->
+
+<body class="ks-navbar-fixed ks-sidebar-empty ks-sidebar-position-fixed ks-page-header-fixed ks-theme-international-klein-blue ks-page-loading"> <!-- remove ks-page-header-fixed to unfix header -->
+
+<!-- BEGIN HEADER -->
+<nav class="navbar ks-navbar">
+    <!-- BEGIN HEADER INNER -->
+    <!-- BEGIN LOGO -->
+    <div href="index.html" class="navbar-brand">
+        <!-- BEGIN RESPONSIVE SIDEBAR TOGGLER -->
+        <a href="#" class="ks-sidebar-toggle"><i class="ks-icon la la-bars" aria-hidden="true"></i></a>
+        <a href="#" class="ks-sidebar-mobile-toggle"><i class="ks-icon la la-bars" aria-hidden="true"></i></a>
+        <!-- END RESPONSIVE SIDEBAR TOGGLER -->
+
+        <div class="ks-navbar-logo">
+            <a href="rnd_index.html" class="ks-logo">
+                <img src="assets/img/logo_trans7.png" width="100%" class="ks-logo-shadow">
+            </a>
+        </div>
+    </div>
+    <!-- END LOGO -->
+
+    <!-- BEGIN MENUS -->
+    <div class="ks-wrapper">
+        <nav class="nav navbar-nav">
+
+            <!-- BEGIN NAVBAR ACTIONS -->
+            <div class="ks-navbar-actions">
+                <!-- BEGIN NAVBAR USER -->
+                <div class="nav-item dropdown ks-user">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <h5 class="ks-title-header pr-1">Hai, Naufal Farras Hilmy</h5>
+                        <span class="ks-avatar">
+                            <img src="assets/img/avatar.png" width="36" height="36">
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Preview">
+                        <a class="dropdown-item" href="#">
+                            <span class="la la-sign-out ks-icon" aria-hidden="true"></span>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- END NAVBAR USER -->
+            </div>
+            <!-- END NAVBAR ACTIONS -->
+        </nav>
+
+        <!-- BEGIN NAVBAR ACTIONS TOGGLER -->
+        <nav class="nav navbar-nav ks-navbar-actions-toggle">
+            <a class="nav-item nav-link" href="#">
+                <span class="la la-ellipsis-h ks-icon ks-open"></span>
+                <span class="la la-close ks-icon ks-close"></span>
+            </a>
+        </nav>
+        <!-- END NAVBAR ACTIONS TOGGLER -->
+
+    </div>
+    <!-- END MENUS -->
+    <!-- END HEADER INNER -->
+</nav>
+<!-- END HEADER -->
+
+<!-- BEGIN NAVBAR HORIZONTAL -->
+<div class="ks-navbar-horizontal ks-crusta">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" href="rnd_index.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_report_analysis.html">Report & Analysis</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_digital_report.html">Digital Report</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_notulensi_pcm.html">Notulensi PCM</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_notulensi_meeting_lintas.html">Notulensi Meeting Lintas Divisi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_upload_report.html">Upload Report</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_activity_log.html">Activity Log</a>
+        </li>
+
+        <li class="nav-item dropdown ks-navbar-horizontal-responsive">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="la la-bars ks-icon"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right"></div>
+        </li>
+    </ul>
+</div>
+<!-- END NAVBAR HORIZONTAL -->
+
+
+<!-- BEGIN DIV CONTENT -->
+<div class="ks-page-container ks-dashboard-tabbed-sidebar-fixed-tabs">
+    <div class="ks-column ks-page">
+
+        <!-- BEGIN THE CONTENT -->
+        <div class="ks-page-content">
+            <div class="ks-page-content-body">
+                <div class="ks-dashboard-tabbed-sidebar">
+                    <div class="ks-dashboard-tabbed-sidebar-widgets">
+
+                        <!-- CAROUSEL-->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="slider-progshare">
+                                    <div class="col-lg-3 col-md-6 progshare-box">
+                                        <div class="card ks-widget-payment-simple-amount-item">
+                                            <div class="payment-simple-amount-item-body">
+                                                <div class="payment-simple-amount-item-title">
+                                                    TRANS 7
+                                                </div>
+                                                <div class="payment-simple-amount-item-amount mb-0">
+                                                    <span class="ks-amount-left">8.9</span>
+                                                    <span class="ks-amount-icon ks-icon-circled-up-right ks-amount-icon-green"></span>
+                                                    <span class="ks-amount-right">9.0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 progshare-box">
+                                        <div class="card ks-widget-payment-simple-amount-item">
+                                            <div class="payment-simple-amount-item-body">
+                                                <div class="payment-simple-amount-item-title">
+                                                    SELEBRITA PAGI
+                                                </div>
+                                                <div class="payment-simple-amount-item-amount mb-0">
+                                                    <span class="ks-amount-left">7.1</span>
+                                                    <span class="ks-amount-icon ks-icon-circled-up-right ks-amount-icon-green"></span>
+                                                    <span class="ks-amount-right">7.4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 progshare-box">
+                                        <div class="card ks-widget-payment-simple-amount-item">
+                                            <div class="payment-simple-amount-item-body">
+                                                <div class="payment-simple-amount-item-title">
+                                                    SELEBRITA SIANG
+                                                </div>
+                                                <div class="payment-simple-amount-item-amount mb-0">
+                                                    <span class="ks-amount-left">8.9</span>
+                                                    <span class="ks-amount-icon ks-icon-circled-right ks-amount-icon-yellow"></span>
+                                                    <span class="ks-amount-right">8.9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 progshare-box">
+                                        <div class="card ks-widget-payment-simple-amount-item">
+                                            <div class="payment-simple-amount-item-body">
+                                                <div class="payment-simple-amount-item-title">
+                                                    REDAKSI CNN INDONESIA SIANG
+                                                </div>
+                                                <div class="payment-simple-amount-item-amount mb-0">
+                                                    <span class="ks-amount-left">12.1</span>
+                                                    <span class="ks-amount-icon ks-icon-circled-down-left ks-amount-icon-red"></span>
+                                                    <span class="ks-amount-right">11.6</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 progshare-box">
+                                        <div class="card ks-widget-payment-simple-amount-item">
+                                            <div class="payment-simple-amount-item-body">
+                                                <div class="payment-simple-amount-item-title">
+                                                    RAGAM INDONESIA
+                                                </div>
+                                                <div class="payment-simple-amount-item-amount mb-0">
+                                                    <span class="ks-amount-left">8.1</span>
+                                                    <span class="ks-amount-icon ks-icon-circled-down-left ks-amount-icon-red"></span>
+                                                    <span class="ks-amount-right">6.8</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CAROUSEL-->
+
+                        <!-- GRAPHIC AND TABLE-->
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="card ks-card-widget ks-widget-chart-orders">
+                                    <h3 class="card-header-bolder">
+                                        TRANS7
+                                    </h3>
+                                    <div class="card-block">
+                                        <div class="ks-chart-orders-block"></div>
+                                    </div>
+                                    
+                                    <!-- FRINGE BOX-->
+                                    <div class="card-block">
+                                        <div class="row">
+                                            <div class="col-xl-2">
+                                                <div class="card ks-widget-simple-weather-only ks-cold">
+                                                    <div class="ks-widget-simple-weather-only-body">
+                                                        <div class="ks-widget-simple-weather-only-block-amount">
+                                                            Fringe 1
+                                                        </div>
+                                                        <div class="ks-widget-simple-weather-only-location">
+                                                            <div id="fringe-1-share" class="d-inline pr-2 font-weight-bold">8.0</div>
+                                                            <span class="ks-icon-circled-up-right ks-amount-icon-green"></span>
+                                                            <div id="fringe-1-inc" class="d-inline pl-2 font-weight-bold">8.0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2">
+                                                <div class="card ks-widget-simple-weather-only ks-cold">
+                                                    <div class="ks-widget-simple-weather-only-body">
+                                                        <div class="ks-widget-simple-weather-only-block-amount">
+                                                            Fringe 2
+                                                        </div>
+                                                        <div class="ks-widget-simple-weather-only-location">
+                                                            <div id="fringe-1-share" class="d-inline pr-2 font-weight-bold">8.0</div>
+                                                            <span class="ks-icon-circled-right ks-amount-icon-yellow"></span>
+                                                            <div id="fringe-1-inc" class="d-inline pl-2 font-weight-bold">8.0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2">
+                                                <div class="card ks-widget-simple-weather-only ks-cold">
+                                                    <div class="ks-widget-simple-weather-only-body">
+                                                        <div class="ks-widget-simple-weather-only-block-amount">
+                                                            Fringe 3
+                                                        </div>
+                                                        <div class="ks-widget-simple-weather-only-location">
+                                                            <div id="fringe-1-share" class="d-inline pr-2 font-weight-bold">8.0</div>
+                                                            <span class="ks-icon-circled-down-left ks-amount-icon-red"></span>
+                                                            <div id="fringe-1-inc" class="d-inline pl-2 font-weight-bold">8.0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2">
+                                                <div class="card ks-widget-simple-weather-only ks-cold">
+                                                    <div class="ks-widget-simple-weather-only-body">
+                                                        <div class="ks-widget-simple-weather-only-block-amount">
+                                                            Primetime
+                                                        </div>
+                                                        <div class="ks-widget-simple-weather-only-location">
+                                                            <div id="fringe-1-share" class="d-inline pr-2 font-weight-bold">8.0</div>
+                                                            <span class="ks-icon-circled-up-right ks-amount-icon-green"></span>
+                                                            <div id="fringe-1-inc" class="d-inline pl-2 font-weight-bold">8.0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2">
+                                                <div class="card ks-widget-simple-weather-only ks-cold">
+                                                    <div class="ks-widget-simple-weather-only-body">
+                                                        <div class="ks-widget-simple-weather-only-block-amount">
+                                                            Shoulder 1
+                                                        </div>
+                                                        <div class="ks-widget-simple-weather-only-location">
+                                                            <div id="fringe-1-share" class="d-inline pr-2 font-weight-bold">8.0</div>
+                                                            <span class="ks-icon-circled-up-right ks-amount-icon-green"></span>
+                                                            <div id="fringe-1-inc" class="d-inline pl-2 font-weight-bold">8.0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2">
+                                                <div class="card ks-widget-simple-weather-only ks-cold">
+                                                    <div class="ks-widget-simple-weather-only-body">
+                                                        <div class="ks-widget-simple-weather-only-block-amount">
+                                                            Shoulder 2
+                                                        </div>
+                                                        <div class="ks-widget-simple-weather-only-location">
+                                                            <div id="fringe-1-share" class="d-inline pr-2 font-weight-bold">8.0</div>
+                                                            <span class="ks-icon-circled-up-right ks-amount-icon-green"></span>
+                                                            <div id="fringe-1-inc" class="d-inline pl-2 font-weight-bold">8.0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END FRINGE BOX-->
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <!-- Table Station-->
+                                <div class="card panel panel-default panel-table">
+                                    <h5 class="card-header-bolder">
+                                        Until Two Day
+                                    </h5>
+                                    <div class="card-block demo-table-scrollable ks-scrollable" data-height="250">
+                                        <table class="table table-bordered text-light">
+                                            <thead class="thead-default">
+                                                <tr>
+                                                    <th class="text-center" colspan="4">UPMID</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>Channel</th>
+                                                    <th>Share</th>
+                                                    <th>Gap</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>TRANS 7</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">2</td>
+                                                    <td>TRANS TV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">3</td>
+                                                    <td>RCTI</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">4</td>
+                                                    <td>SCTV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">5</td>
+                                                    <td>INDOESIAR</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">6</td>
+                                                    <td>KOMPAS TV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">7</td>
+                                                    <td>TV ONE</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">8</td>
+                                                    <td>NET TV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="card panel panel-default panel-table">
+                                    <h5 class="card-header-bolder">
+                                        Weekly
+                                    </h5>
+                                    <div class="card-block demo-table-scrollable ks-scrollable" data-height="250">
+                                        <table class="table table-bordered text-light">
+                                            <thead class="thead-default">
+                                                <tr>
+                                                    <th class="text-center" colspan="4">UPMID</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>Channel</th>
+                                                    <th>Share</th>
+                                                    <th>Gap</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>TRANS 7</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">2</td>
+                                                    <td>TRANS TV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">3</td>
+                                                    <td>RCTI</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">4</td>
+                                                    <td>SCTV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">5</td>
+                                                    <td>INDOESIAR</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">6</td>
+                                                    <td>KOMPAS TV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">7</td>
+                                                    <td>TV ONE</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">8</td>
+                                                    <td>NET TV</td>
+                                                    <td class="text-primary text-bold">7.9</td>
+                                                    <td class="text-primary text-bold">0.1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- End Table Station-->
+
+                                <!-- Table Program-->
+                                <div class="card panel panel-default panel-table">
+                                    <h5 class="card-header-bolder">
+                                        Jumat, 01/05/2020
+                                    </h5>
+                                    <div class="card-block demo-table-scrollable ks-scrollable" data-height="500">
+                                        <table class="table table-bordered text-light">
+                                            <thead class="thead-default">
+                                                <tr>
+                                                    <th>Audience</th>
+                                                    <th>TVR</th>
+                                                    <th>TVS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">UPMID1</td>
+                                                        <td class="text-primary text-bold">0.6</td>
+                                                        <td class="text-primary text-bold">6.0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- End Table Program-->
+                            </div>
+                        </div>
+                        <!-- END GRAPHIC AND TABLE-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END THE CONTENT -->
+    </div>
+</div>
+<!-- END DIV CONTENT -->
+
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/responsejs/response.min.js"></script>
+<script src="libs/loading-overlay/loadingoverlay.min.js"></script>
+<script src="libs/tether/js/tether.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="libs/jscrollpane/jquery.mousewheel.js"></script>
+<script src="libs/flexibility/flexibility.js"></script>
+<script src="libs/velocity/velocity.min.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="assets/scripts/common.min.js"></script>
+<!-- END THEME LAYOUT SCRIPTS -->
+
+<script src="libs/stacktable/stacktable.js"></script>
+<script src="libs/d3/d3.min.js"></script>
+<script src="libs/c3js/c3.min.js"></script>
+
+<!-- FLICKITY-->
+<script src="libs/flickity/flickity.pkgd.min.js"></script>
+<!-- END FLICKITY-->
+
+<script type="application/javascript">
+(function ($) {
+    $(document).ready(function () {
+        $('.slider-progshare').flickity({
+            cellAlign: 'left',
+            pageDots: false,
+            wrapAround: true,
+            autoPlay: true,
+            pauseAutoPlayOnHover: false,
+        });
+
+        c3.generate({
+            bindto: '#ks-next-payout-chart',
+            data: {
+                columns: [
+                    ['data1', 6, 5, 6, 5, 7, 8, 7]
+                ],
+                types: {
+                    data1: 'area'
+                },
+                colors: {
+                    data1: '#81c159'
+                }
+            },
+            legend: {
+                show: false
+            },
+            tooltip: {
+                show: false
+            },
+            point: {
+                show: false
+            },
+            axis: {
+                x: {show:false},
+                y: {show:false}
+            }
+        });
+
+        c3.generate({
+            bindto: '#ks-total-earning-chart',
+            data: {
+                columns: [
+                    ['data1', 6, 5, 6, 5, 7, 8, 7]
+                ],
+                types: {
+                    data1: 'area'
+                },
+                colors: {
+                    data1: '#4e54a8'
+                }
+            },
+            legend: {
+                show: false
+            },
+            tooltip: {
+                show: false
+            },
+            point: {
+                show: false
+            },
+            axis: {
+                x: {show:false},
+                y: {show:false}
+            }
+        });
+
+        c3.generate({
+            bindto: '.ks-chart-orders-block',
+            data: {
+                columns: [
+                    ['Revenue', 150, 200, 220, 280, 400, 160, 260, 400, 300, 400, 500, 420, 500, 300, 200, 100, 400, 600, 300, 360, 600],
+                    ['Profit', 350, 300,  200, 140, 200, 30, 200, 100, 400, 600, 300, 200, 100, 50, 200, 600, 300, 500, 30, 200, 320]
+                ],
+                colors: {
+                    'Revenue': '#f88528',
+                    'Profit': '#81c159'
+                }
+            },
+            point: {
+                r: 5
+            },
+            grid: {
+                y: {
+                    show: true
+                }
+            }
+        });
+
+    });
+})(jQuery);
+</script>
+
+</body>
+</html>

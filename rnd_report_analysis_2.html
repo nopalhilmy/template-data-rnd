@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <title>Data Research Center  - Trans | 7</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BEGIN FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- END FAVICON -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-awesome/css/line-awesome.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="assets/fonts/open-sans/styles.css">-->
+
+    <link rel="stylesheet" type="text/css" href="assets/fonts/montserrat/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="libs/tether/css/tether.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/jscrollpane/jquery.jscrollpane.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/common.css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN THEME STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/themes/international-klein-blue.css">
+    <link class="ks-sidebar-dark-style" rel="stylesheet" type="text/css" href="assets/styles/themes/sidebar-black.min.css">
+    <!-- END THEME STYLES -->
+
+    <!-- FILE MANAGER STYLES-->
+    <link rel="stylesheet" type="text/css" href="assets/styles/apps/file-manager.min.css">
+    <!-- END FILE MANAGER STYLES-->
+</head>
+<!-- END HEAD -->
+
+<body class="ks-navbar-fixed ks-sidebar-empty ks-sidebar-position-fixed ks-page-header-fixed ks-theme-international-klein-blue ks-page-loading"> <!-- remove ks-page-header-fixed to unfix header -->
+
+<!-- BEGIN HEADER -->
+<nav class="navbar ks-navbar">
+    <!-- BEGIN HEADER INNER -->
+    <!-- BEGIN LOGO -->
+    <div href="index.html" class="navbar-brand">
+        <!-- BEGIN RESPONSIVE SIDEBAR TOGGLER -->
+        <a href="#" class="ks-sidebar-toggle"><i class="ks-icon la la-bars" aria-hidden="true"></i></a>
+        <a href="#" class="ks-sidebar-mobile-toggle"><i class="ks-icon la la-bars" aria-hidden="true"></i></a>
+        <!-- END RESPONSIVE SIDEBAR TOGGLER -->
+
+        <div class="ks-navbar-logo">
+            <a href="rnd_index.html" class="ks-logo">
+                <img src="assets/img/logo_trans7.png" width="100%" class="ks-logo-shadow">
+            </a>
+        </div>
+    </div>
+    <!-- END LOGO -->
+
+    <!-- BEGIN MENUS -->
+    <div class="ks-wrapper">
+        <nav class="nav navbar-nav">
+
+            <!-- BEGIN NAVBAR ACTIONS -->
+            <div class="ks-navbar-actions">
+                <!-- BEGIN NAVBAR USER -->
+                <div class="nav-item dropdown ks-user">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <h5 class="ks-title-header pr-1">Hai, Naufal Farras Hilmy</h5>
+                        <span class="ks-avatar">
+                            <img src="assets/img/avatar.png" width="36" height="36">
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Preview">
+                        <a class="dropdown-item" href="#">
+                            <span class="la la-sign-out ks-icon" aria-hidden="true"></span>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- END NAVBAR USER -->
+            </div>
+            <!-- END NAVBAR ACTIONS -->
+        </nav>
+
+        <!-- BEGIN NAVBAR ACTIONS TOGGLER -->
+        <nav class="nav navbar-nav ks-navbar-actions-toggle">
+            <a class="nav-item nav-link" href="#">
+                <span class="la la-ellipsis-h ks-icon ks-open"></span>
+                <span class="la la-close ks-icon ks-close"></span>
+            </a>
+        </nav>
+        <!-- END NAVBAR ACTIONS TOGGLER -->
+
+    </div>
+    <!-- END MENUS -->
+    <!-- END HEADER INNER -->
+</nav>
+<!-- END HEADER -->
+
+<!-- BEGIN NAVBAR HORIZONTAL -->
+<div class="ks-navbar-horizontal ks-crusta">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_index.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="rnd_report_analysis.html">Report & Analysis</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_digital_report.html">Digital Report</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_notulensi_pcm.html">Notulensi PCM</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_notulensi_meeting_lintas.html">Notulensi Meeting Lintas Divisi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_upload_report.html">Upload Report</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="rnd_activity_log.html">Activity Log</a>
+        </li>
+
+        <li class="nav-item dropdown ks-navbar-horizontal-responsive">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="la la-bars ks-icon"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right"></div>
+        </li>
+    </ul>
+</div>
+<!-- END NAVBAR HORIZONTAL -->
+
+<!-- BEGIN DIV CONTENT -->
+<div class="ks-page-container">
+
+    <div class="ks-column ks-page">
+
+        <div class="ks-page-content">
+            <div class="ks-page-content-body ks-filemanager-page">
+                
+                <div class="ks-navigation ks-scrollable" data-auto-height>
+                    <div class="ks-wrapper">
+                        <div class="ks-separator">Browse</div>
+                        <ul class="ks-menu">
+                            <li>
+                                <a href="rnd_report_analysis.html"><span class="ks-icon la la-file-zip-o"></span>Executive Summary</a>
+                            </li>
+                            <li>
+                                <a class="active_link" href="rnd_report_analysis_2.html"><span class="ks-icon la la-file"></span>Prog. Perfomance List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ks-files">
+                    <div class="ks-header">
+                        <h4>Program Perfomance List</h4>
+                        <div class="ks-filters">
+                            <button class="btn btn-outline-primary ks-light ks-filemanager-navigation-block-toggle mb-4" data-toggle="collapse" data-block-toggle=".ks-filemanager-page > .ks-navigation">Menu - Browse</button>
+                        </div>
+
+                        <div class="ks-filters">
+                            <div class="ks-sortable btn-group">
+                                <select class="form-control">
+                                    <option>Filter File By Week</option>
+                                    <option>Select</option>
+                                    <option>Select</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ks-content ks-scrollable" data-auto-height data-fix-height="40">
+                        <ul class="ks-items">
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">Daily Report RedaksiSore Akhir Pekan 2001.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">DailyReportRedaksiSore2001.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                            <li class="ks-item ks-item-file">
+                                <span class="ks-thumb la la-file-pdf-o text-danger"></span>
+                                <span class="ks-filename">File.pdf</span>
+                                <span class="ks-filename mt-1">
+                                    <button class="btn btn-sm btn-outline-primary ks-solid sm-text">
+                                        <span class="la la-trash-o ks-icon ks-sm-2"></span>
+                                        <span class="ks-text">Delete</span>
+                                    </button>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END BEGIN DIV CONTENT -->
+
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/responsejs/response.min.js"></script>
+<script src="libs/loading-overlay/loadingoverlay.min.js"></script>
+<script src="libs/tether/js/tether.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="libs/jscrollpane/jquery.mousewheel.js"></script>
+<script src="libs/flexibility/flexibility.js"></script>
+<script src="libs/noty/noty.min.js"></script>
+<script src="libs/velocity/velocity.min.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="assets/scripts/common.min.js"></script>
+<!-- END THEME LAYOUT SCRIPTS -->
+
+</body>
+</html>
