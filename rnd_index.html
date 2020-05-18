@@ -22,11 +22,11 @@
 
     <link rel="stylesheet" type="text/css" href="libs/tether/css/tether.min.css">
     <link rel="stylesheet" type="text/css" href="libs/jscrollpane/jquery.jscrollpane.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/common.min.css">
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN THEME STYLES -->
-    <link rel="stylesheet" type="text/css" href="assets/styles/themes/international-klein-blue.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/themes/international-klein-blue.min.css">
     <link class="ks-sidebar-dark-style" rel="stylesheet" type="text/css" href="assets/styles/themes/sidebar-black.min.css">
     <!-- END THEME STYLES -->
 
@@ -35,8 +35,8 @@
     <link rel="stylesheet" type="text/css" href="assets/fonts/kosmo/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/weather/css/weather-icons.min.css">
     <link rel="stylesheet" type="text/css" href="libs/c3js/c3.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/widgets/payment.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/widgets/panels.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/widgets/payment.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/widgets/panels.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/dashboard/tabbed-sidebar.min.css">
     <!-- END DASHBOARD STYLES-->
 
@@ -130,13 +130,6 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="rnd_activity_log.html">Activity Log</a>
-        </li>
-
-        <li class="nav-item dropdown ks-navbar-horizontal-responsive">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="la la-bars ks-icon"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right"></div>
         </li>
     </ul>
 </div>
@@ -235,7 +228,7 @@
                         <!-- GRAPHIC AND TABLE-->
                         <div class="row">
                             <div class="col-xl-8">
-                                <div class="card ks-card-widget ks-widget-chart-orders">
+                                <div id="graph-card" class="card ks-card-widget ks-widget-chart-orders">
                                     <h3 class="card-header-bolder">
                                         TRANS7
                                     </h3>
@@ -338,7 +331,7 @@
 
                             <div class="col-xl-4">
                                 <!-- Table Station-->
-                                <div class="card panel panel-default panel-table">
+                                <div id="table-card" class="card panel panel-default panel-table">
                                     <h5 class="card-header-bolder">
                                         Until Two Day
                                     </h5>
@@ -578,7 +571,6 @@
 
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <script src="libs/jquery/jquery.min.js"></script>
-<script src="libs/popper/popper.min.js"></script>
 <script src="libs/responsejs/response.min.js"></script>
 <script src="libs/loading-overlay/loadingoverlay.min.js"></script>
 <script src="libs/tether/js/tether.min.js"></script>
@@ -601,6 +593,10 @@
 <script src="libs/flickity/flickity.pkgd.min.js"></script>
 <!-- END FLICKITY-->
 
+<!-- JQUERY LOADING -->
+<script src="libs/jquery-loading-master/jquery.loading.min.js"></script>
+<!-- END JQUERY LOADING -->
+
 <script type="application/javascript">
 (function ($) {
     $(document).ready(function () {
@@ -610,6 +606,12 @@
             wrapAround: true,
             autoPlay: true,
             pauseAutoPlayOnHover: false,
+        }).on( 'change.flickity', function( event, index ) {
+            $('#graph-card').loading('start');
+            $('#table-card').loading('start');
+        }).on( 'settle.flickity', function( event, index ) {
+            $('#graph-card').loading('stop');
+            $('#table-card').loading('stop');
         });
 
         c3.generate({

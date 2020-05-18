@@ -7281,6 +7281,7 @@ body.ks-sidebar-iconbar_compact .ks-navbar .navbar-brand {
     margin-left: -132px; } }
 
 .ks-navbar-horizontal {
+  overflow: auto;
   padding-left: 30px;
   padding-right: 30px;
   height: 50px;
