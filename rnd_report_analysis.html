@@ -151,7 +151,22 @@
                     <div class="ks-header">
                         <h4>Executive Summary</h4>
                         <div class="ks-filters">
-                            <button class="btn btn-outline-primary ks-light ks-filemanager-navigation-block-toggle mb-4" data-toggle="collapse" data-block-toggle=".ks-filemanager-page > .ks-navigation">Menu - Browse</button>
+                            <!--<button class="btn btn-outline-primary ks-light ks-filemanager-navigation-block-toggle mb-4" data-toggle="collapse" data-block-toggle=".ks-filemanager-page > .ks-navigation">Menu - Browse</button>-->
+                            <div class="ks-sortable btn-group">
+                                <button class="btn btn-outline-primary ks-light ks-filemanager-navigation-block-toggle mb-4 dropdown-toggle" type="button" data-toggle="dropdown" data-block-toggle="#" aria-haspopup="true" aria-expanded="false">
+                                    <span class="btn-text-lighter">Menu - Browse</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right ks-dropdown-menu-sortable">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="ks-icon la la-file-zip-o"></span>Executive Summary
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="ks-icon la la-file-zip-o"></span>Prog. Perfomance List
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="ks-filters">
@@ -313,6 +328,7 @@
 
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/popper/popper.min.js"></script>
 <script src="libs/responsejs/response.min.js"></script>
 <script src="libs/loading-overlay/loadingoverlay.min.js"></script>
 <script src="libs/tether/js/tether.min.js"></script>
