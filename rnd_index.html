@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!-- BEGIN HEAD -->
-<head>
+<>
     <meta charset="UTF-8">
     <title>Data Research Center  - Trans | 7</title>
 
@@ -43,6 +43,11 @@
     <!-- FLICKITY-->
     <link rel="stylesheet" type="text/css" href="libs/flickity/flickity.min.css">
     <!-- END FLICKITY-->
+
+    <!--SELECT 2-->
+    <link rel="stylesheet" type="text/css" href="libs/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/libs/select2/select2.min.css">
+    <!--END SELECT 2-->
 </head>
 <!-- END HEAD -->
 
@@ -144,7 +149,30 @@
         <div class="ks-page-content">
             <div class="ks-page-content-body">
                 <div class="ks-dashboard-tabbed-sidebar">
-                    <div class="ks-dashboard-tabbed-sidebar-widgets">
+                    <div class="ks-dashboard-tabbed-sidebar-widgets pt-2">
+                        <!-- FILTER BY PROGRAM NAME-->
+                        <div class="row justify-content-lg-end justify-content-sm-center">
+                            <div class="col-md-12 col-lg-4">
+                                <div class="input-group justify-content-lg-end justify-content-sm-center">
+                                    <select class="form-control search-program-name" style="width: 65%;">
+                                        <option></option>
+                                        <option value="a">REKONTRUKSI</option>
+                                        <option value="b">GOGOBUS</option>
+                                        <option value="c">THE JUNGLE BUNCH</option>
+                                        <option value="d">REDAKSI PAGI</option>
+                                        <option value="e">RAGAM INDONESIA</option>
+                                        <option value="f">SELEBRITA PAGI</option>
+                                    </select>
+                                    <span class="input-group-append">
+                                        <button class="btn btn-primary" type="button">
+                                            <span class="ks-text">Filter</span>
+                                            <span class="la la-search ks-icon"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END FILTER BY PROGRAM NAME-->
 
                         <!-- CAROUSEL-->
                         <div class="row">
@@ -597,6 +625,10 @@
 <script src="libs/jquery-loading-master/jquery.loading.min.js"></script>
 <!-- END JQUERY LOADING -->
 
+<!--SELECT 2-->
+<script src="libs/select2/js/select2.min.js"></script>
+<!--END SELECT 2-->
+
 <script type="application/javascript">
 (function ($) {
     $(document).ready(function () {
@@ -691,6 +723,13 @@
                 }
             }
         });
+
+        //-- FILTER BY PROGRAM NAME
+        $('select.search-program-name').select2({
+            placeholder: "Search Program Name ...",
+            allowClear: true
+        });
+        //-- FILTER BY PROGRAM NAME
 
     });
 })(jQuery);
